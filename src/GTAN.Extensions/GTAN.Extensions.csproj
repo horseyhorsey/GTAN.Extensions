@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GTAN.Data\GTAN.Data.csproj" />
+  </ItemGroup>
+
+  <!--GTAN REFS-->
+  <ItemGroup>
+    <Reference Include="Bootstrapper">
+      <HintPath>C:\RAGEMP\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <!--COPY FILES TO RAGEMP RUNTIME-->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /E /Y /R &quot;$(TargetDir)*.*&quot; &quot;C:\RAGEMP\server-files\bridge\runtime\*.*&quot;&#xD;&#xA;del &quot;C:/RAGEMP\server-files\bridge\runtime\$(TargetName).deps.json&quot;" />
+  </Target>
+
+</Project>
