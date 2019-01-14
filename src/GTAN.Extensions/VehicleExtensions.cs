@@ -11,7 +11,7 @@ namespace GTAN.Extensions
             
         //}
             /// <summary>
-        /// Gets a hash for the vehicle model from its string name from new list
+        /// Gets a hash for the vehicle model from its string name from dicts
         /// </summary>
         /// <param name="vehicle"></param>
         /// <param name="vehicleName"></param>

@@ -40,6 +40,7 @@ namespace GTAN.Data
         OnlineBunkers,
         OnlineApartments,       
         Special,
+        ArenaWar,
     }
 
     public enum InteriorType
@@ -62,5 +63,6 @@ namespace GTAN.Data
         Garage,
         Character,
         Misc,
+        Arena,
     }
 }

@@ -105,6 +105,11 @@ namespace GTAN.Data
                 {"Power Broker Ice4", new Interior("ex_sm_15_office_03a",  new Vector3(-1392.563, -480.549, 72.0421), InteriorLocation.MazeBankWest, InteriorType.Office)},
                 {"Power Broker Convservative4", new Interior("ex_sm_15_office_03b",  new Vector3(-1392.528, -480.475, 72.04206), InteriorLocation.MazeBankWest, InteriorType.Office)},
                 {"Power Broker Polished4", new Interior("ex_sm_15_office_03c",  new Vector3(-1392.416, -480.7485, 72.04207), InteriorLocation.MazeBankWest, InteriorType.Office)},
+                {"XS Arena", new Interior("xs_arena_interior",  new Vector3(2800.000, -3800.000, 100.000), InteriorLocation.ArenaWar, InteriorType.Arena)},
+                {"XS Arena Mod", new Interior("xs_arena_interior_mod",  new Vector3(205.000, 5180.000, -90.000), InteriorLocation.ArenaWar, InteriorType.Arena)},
+                {"XS Arena Mod 2", new Interior("xs_arena_interior_mod_2",  new Vector3(205.000, 5180.000, -90.000), InteriorLocation.ArenaWar, InteriorType.Arena)},
+                {"XS Arena VIP", new Interior("xs_arena_interior_vip",  new Vector3(2799.529, -3930.539, 184.000), InteriorLocation.ArenaWar, InteriorType.Arena)},
+               
             };
 
         /// <summary>
