@@ -11,14 +11,26 @@
       <HintPath>C:\RAGEMP\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
     </Reference>
     
-    <Reference Include="Newtonsoft.Json">      
+    <Reference Include="Newtonsoft.Json">
       <HintPath>C:\RAGEMP\dotnet\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Outfits\female_mp_outfits.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Outfits\male_mp_outfits.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Weapon\weapon_data.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <!--COPY FILES TO RAGEMP RUNTIME-->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /E /Y /R &quot;$(TargetDir)*.*&quot; &quot;C:\RAGEMP\server-files\bridge\runtime\*.*&quot;&#xD;&#xA;xcopy /E /Y /R &quot;$(TargetDir)female_mp_outfits.json&quot; &quot;C:\RAGEMP\server-files\bridge\female_mp_outfits.json&quot;&#xD;&#xA;xcopy /E /Y /R &quot;$(TargetDir)male_mp_outfits.json&quot; &quot;C:\RAGEMP\server-files\bridge\male_mp_outfits.json&quot;&#xD;&#xA;del &quot;C:/RAGEMP\server-files\bridge\runtime\$(TargetName).deps.json&quot;" />
+    <Exec Command="xcopy /E /Y /R &quot;$(TargetDir)*.*&quot; &quot;C:\RAGEMP\server-files\bridge\runtime\*.*&quot;&#xD;&#xA;xcopy /Y &quot;$(ProjectDir)Outfits\female_mp_outfits.json&quot; &quot;C:\RAGEMP\server-files\bridge\female_mp_outfits.json*&quot;&#xD;&#xA;xcopy /Y /R &quot;$(ProjectDir)Outfits\male_mp_outfits.json&quot; &quot;C:\RAGEMP\server-files\bridge\male_mp_outfits.json*&quot;&#xD;&#xA;xcopy /Y /R &quot;$(ProjectDir)Weapon\weapon_data.json&quot; &quot;C:\RAGEMP\server-files\bridge\weapon_data.json*&quot;&#xD;&#xA;del &quot;C:/RAGEMP\server-files\bridge\runtime\$(TargetName).deps.json&quot;" />
   </Target>
 
 

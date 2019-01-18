@@ -13,12 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\GTAN.Extensions\GTAN.Extensions.csproj" />    
+    <ProjectReference Include="..\GTAN.Extensions\GTAN.Extensions.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Bootstrapper">
-      <HintPath>C:\RAGEMP\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
+      <HintPath>C:/RAGEMP/\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
     </Reference>
   </ItemGroup>
  

@@ -1,17 +1,11 @@
 ﻿# GTAN.Data
 
-Data for the game.
-
-- Interiors
-- Vehicles dicts
-- Ped dicts
-- Outfits
-- Locations
-- Etc
+Std Data for the game.
 
 ## Notes
 
 - Outfits jsons copied to bridge folder
+- WeaponData copied to bridge folder
 
 ## Build directory (Shared)
 	  <!--COPY FILES TO RAGEMP RUNTIME-->
